@@ -16,23 +16,23 @@ class HomePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("Hello Muhammad Osama's Here"),
-              Text("mosamarafique@gmail.com"),
+              Center(child: Text("Hello Muhammad Osama's Here")),
+              Center(child: Text("mosamarafique@gmail.com")),
               Container(
-                child: Text("My"),
+                child: Center(child: Text("My First")),
                 padding: const EdgeInsets.all(8),
                 width: 100,
                 height: 100,
                 color: Colors.redAccent,
               ),
               Container(
-                  child: Text("First"),
+                  child: Center(child: Text("Flutter")),
                   padding: const EdgeInsets.all(8),
                   width: 100,
                   height: 100,
                   color: Colors.green),
               Container(
-                child: Text("Flutter App"),
+                child: Center(child: Text("Application")),
                 padding: const EdgeInsets.all(8),
                 width: 100,
                 height: 100,
