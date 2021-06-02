@@ -11,8 +11,7 @@ class MyDrawer extends StatelessWidget {
             accountName: Text("Muhammad Osama"),
             accountEmail: Text("mosamarafique@gmail.com.."),
             currentAccountPicture: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  "https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=282&q=80"),
+              backgroundImage: AssetImage("assets/20210526_000719.jpg"),
             ),
             decoration: BoxDecoration(color: Colors.purpleAccent),
           ),

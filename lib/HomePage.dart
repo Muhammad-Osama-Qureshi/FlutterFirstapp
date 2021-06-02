@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/drawer.dart';
+import 'package:flutter_application_1/utils/constants.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -35,6 +36,14 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           title: Text("Muhammad Osama's App "),
           backgroundColor: Colors.purpleAccent,
+          actions: [
+            IconButton(
+                icon: Icon(Icons.exit_to_app),
+                onPressed: () {
+                  Constants.prefs.setBool("loggedIn", false);
+                  Navigator.pushReplacementNamed(context, "/login");
+                })
+          ],
         ),
         body: Padding(
             padding: const EdgeInsets.all(16.0),
